@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+
+body {
+    margin-top: 0%;
+}
+
+.container .navbar {
+    display: flex;
+    width: 942px;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .navbar #search {
+    position: relative;
+    right: 930px;
+    height: 26px;
+}
+
+.container .navbar #profilePic {
+    height: 40px;
+    
+}
+
+.container .navbar .alert {
+   
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.container .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #F81A42;
+    border-radius: 15px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: 595px;
+    width: 80px;
+}
+
+.container .sidebar .acoes {
+    height: 45px;
+}
+
+.container .dashboard {
+    position: relative;
+    top: 30px;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 200px;
+}
+
+.container .dashboard h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container .dashboard h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    position: relative;
+    bottom: 40px;
+}
+
+.container #myChart {
+    position: relative;
+    width: 500px;
+    
+}
+
+.container .chartJs {
+    display: flex;
+    position: relative;
+    top: 320px;
+    left: 80px;
+    height: 200px;
+}
+

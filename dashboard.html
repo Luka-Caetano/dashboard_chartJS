@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="js/myscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="sidebar">
+
+            
+            <img id="arrow" src="images/arrow1.png" alt="">
+            <img class="acoes" src="images/map.png" alt="">
+            <img class="acoes" src="images/rainfall.png" alt="">
+            <img class="acoes" src="images/thermometer.png" alt="">
+            <img class="acoes" src="images/healthyGrape.png" alt="">
+
+        
+        </div>
+
+        <div class="dashboard">
+            <h1 class="text">Bom dia #Usuário#!</h1>
+            <h2 class="text">Verifique as principais atualizações desta manhã</h2>
+
+        </div>
+        <div class="chartJs">
+            <canvas id="myChart"></canvas>
+            <canvas id="myChart2"></canvas>
+        </div>
+
+        <div class="navbar">
+
+            <ul>
+                <img id="search" src="images/icon_pesquisa.png" alt="">
+            </ul>
+            <ul>
+                <img class="alert" src="images/icon_alerta.png" alt="">
+            </ul>
+            <ul>
+                <img class="alert" src="images/icon_notificacao.png" alt="">
+            </ul>
+            <ul>
+                <img id="profilePic" src="images/profilePic.png" alt="">
+            </ul>
+    
+        </div>
+       
+        
+
+    </div>
+    
+
+    
+    
+</body>
+
+<script>
+    const ctx = document.getElementById('myChart');
+    const ctx2 = document.getElementById('myChart2');
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+        datasets: [{
+          label: 'Temperatura média',
+          data: [22, 19, 23, 25, 22, 23],
+          borderWidth: 1
+        },
+        {
+          label: 'Umidade média',
+          data: [91, 89, 83, 85, 72, 79],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  
+    new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+        datasets: [{
+          label: 'Temperatura',
+          data: [22, 19, 23, 25, 22, 23],
+          borderWidth: 1
+        },
+        {
+          label: 'Umidade',
+          data: [91, 89, 83, 85, 72, 79],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+  
+
+</html>
